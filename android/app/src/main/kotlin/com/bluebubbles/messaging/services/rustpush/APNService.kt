@@ -173,7 +173,7 @@ class APNService : Service(), MsgReceiver {
     fun createNotificationChannel() {
         val importance = NotificationManager.IMPORTANCE_MIN
         val channel = NotificationChannel(FOREGROUND_SERVICE_CHANNEL, "Foreground Service", importance).apply {
-            description = "Allows BlueBubbles to stay open in the background for notifications if FCM is not being used"
+            description = "Allows OpenBubbles to stay open in the background for notifications if FCM is not being used"
         }
         // Register the channel with the system
         val notificationManager: NotificationManager =
